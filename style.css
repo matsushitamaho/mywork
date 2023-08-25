@@ -40,12 +40,13 @@ a {
   object-fit: cover;
 }
 
-.about {
-  margin-top: 70px;
+section {
+  margin-top: 150px;
 }
 
 .about h2,
-.works h2 {
+.works h2,
+.news h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,9 +70,69 @@ a {
 }
 
 .image {
-  width: 60%;
+  width: 70%;
   margin: 70px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image ul {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image li {
+  margin: 10px;
+}
+
+.image img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+dl {
+  width: 60%;
+  margin: 70px auto;
+  padding:3%;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-top:1px solid #ccc;
+}
+
+dt {
+  float: left ;
+	clear: left ;
+	margin-right: 0.1em ;
+	width: 120px ;
+	padding-bottom: 30px;
+}
+
+dd {
+	float: left ;
+	margin-left: 1em ;
+}
+
+dl dt{
+  border-top:1px solid #ccc;
+  float: left;
+  width:25%;
+  padding:2% 0;
+}
+
+dl dd{
+  border-top:1px solid #ccc;
+  padding:2% 0;
+  margin-left: 25%;
+}
+
+dl dt:first-child{
+  border-top:none;
+}
+
+dl dt:first-child + dd{
+  border-top:none;
 }
